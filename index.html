@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="bg-success text-white text-center p-4 ">crud</h1>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-sm-4">
+                <form action="" id="stdForm">
+                    <div class="form-group">
+                        <label for="Fname"><b>FirstName*</b></label>
+                        <input type="text" id="Fname" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Lname"><b>lastName*</b></label>
+                        <input type="text" id="Lname" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><b>email*</b></label>
+                        <input type="text" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact"><b>contact*</b></label>
+                        <input type="text" id="contact" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary" type="submit" id="submitBtn">submit</button>
+                        <button class="btn btn-primary d-none"  id="Updatebtn">Update</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-8">
+                <table class="table table-bordered">
+                    <thead>
+                        <th>Sr No</th>
+                        <th>FirstName</th>
+                        <th>lastName</th>
+                        <th>email</th>
+                        <th>contact</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </thead>
+
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
